@@ -10,7 +10,7 @@ docker run -d -p 3128:3128 --name squid  squid:latest
 
 ## Use
 
-Configure your favorite browser to use the use a proxy at http://\<yourdockerhos\>:3128
+Configure your favorite browser to use the use a proxy at http://\<yourdockerhost\>:3128
 
 ### Automatic proxy configuration and discovery
 

@@ -2,7 +2,7 @@
 
 if [[ $1 == "squid" ]]
 then
-  chown -R proxy:proxy /squid-cache
+  chown -R proxy:proxy /cache
   chown proxy:proxy /var/log/squid/*
   # read the logpipe and print to stdout
   while read line

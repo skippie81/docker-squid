@@ -2,6 +2,10 @@
 
 if [[ $1 == "squid" ]]
 then
+  if [[ -f /var/run/squid.pid ]]
+  then 
+    rm /var/run/squid.pid
+  fi
   chown -R proxy:proxy /cache
   chown proxy:proxy /var/log/squid/*
   # read the logpipe and print to stdout
